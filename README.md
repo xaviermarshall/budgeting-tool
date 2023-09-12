@@ -1,4 +1,4 @@
-# Simple Python Budgeting Tool
+# Simple Python/JavaScript Budgeting Tool
 
 This is just a simple tool to budget your income based on 3 factors:
 
@@ -15,3 +15,7 @@ The categories are initialized based on the "50/30/20" rule of budgeting, but so
 so this tool gives the option to pick and choose how much they want where.
 
 This was a fun little project to learn some new skills with.
+
+# Update 9/12/23
+
+I've ported the program to JavaScript! The JS version isn't quite as clean as the Python version, but it'll be alright for now.
