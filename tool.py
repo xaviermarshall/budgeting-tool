@@ -20,7 +20,7 @@ input("You can change these in the questions, but you don't have to. If you don'
 print("Let's start with how you want to divide your income.")
 
 while answer != "y":
-    income = input("Enter your income (rounded to the nearest whole number) here: ")
+    income = float(input("Enter your income (rounded to the nearest whole number) here: "))
     print(f"You entered {income}")
     answer = input("Is this correct? (y/n) ")
 
@@ -35,7 +35,7 @@ while answer != "y":
         print(f"You entered {essentials}")
         answer = input("Is this correct? (y/n) ")
     else:
-        essentials = answer
+        essentials = float(answer)
         print(f"You entered {essentials}")
         answer = input("Is this correct? (y/n) ")
 
@@ -48,7 +48,7 @@ while answer != "y":
         print(f"You entered {wants}")
         answer = input("Is this correct? (y/n) ")
     else:
-        wants = answer
+        wants = float(answer)
         print(f"You entered {wants}")
         answer = input("Is this correct? (y/n) ")
 
@@ -61,16 +61,16 @@ while answer != "y":
         print(f"You entered {savings}")
         answer = input("Is this correct? (y/n) ")
     else:
-        savings = answer
+        savings = float(answer)
         print(f"You entered {savings}")
         answer = input("Is this correct? (y/n) ")
 
 
 
 # Now for the calculations ooooo fun.
-essentialsAmount = (int(essentials) * int(income)) / 100
-wantsAmount = (int(wants) * int(income)) / 100
-savingsAmount = (int(savings) * int(income)) / 100
+essentialsAmount = (essentials * income) / 100.
+wantsAmount = (wants * income) / 100.
+savingsAmount = (savings * income) / 100.
 
 print("And here are the amounts of money you'll be dedicating to each category this month:")
 print(f"Essentials: {essentialsAmount}")
