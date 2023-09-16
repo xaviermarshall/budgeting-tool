@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
-essentials = 50
-wants = 30
-savings = 20
-income = 0
-answer = ""
-essentialsAmount = 0
-wantsAmount = 0
-savingsAmount = 0
+essentials:float = 50
+wants:float = 30
+savings:float = 20
+income:float = 0
+answer:str = ""
+essentialsAmount:float = 0
+wantsAmount:float = 0
+savingsAmount:float = 0
 
 input("Welcome to the simple budgeting tool.")
 input("This application will ask for your income, and then how you want to divide it among 3 categories:")
@@ -77,6 +77,7 @@ print(f"Essentials: {essentialsAmount}")
 print(f"Wants: {wantsAmount}")
 print(f"Savings: {savingsAmount}\n")
 
-
 input("Thanks so much for using this tool. Press enter when you're ready to close the program.")
 exit()
+
+
